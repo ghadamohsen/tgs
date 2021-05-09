@@ -1,0 +1,327 @@
+body{
+    direction: ltr;
+    font-family: 'DroidArabicKufiRegular';
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: #000;
+    opacity: 0.5;
+}
+
+.logo{
+    width: 160px;
+    height: 70px;
+}
+.up-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 7px;
+    margin-bottom: 0  !important;
+}
+.up-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.up-nav .en{
+    font-family: "Open Sans", sans-serif !important;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.sticky{
+    background: #fff;
+    opacity: 1;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 15%);
+}
+.sticky .up-nav a ,
+.sticky .up-nav button ,
+.sticky .navbar-nav .nav-link{
+  color: #676767 !important;
+}
+.sticky .remove{
+    display: none;
+}
+.add-sticky{
+    display: none;
+}
+.sticky .add-sticky{
+    display: block;
+}
+@media (max-width:1024px) {
+    .nav-link ,
+    .up-nav a ,
+    .up-nav button{
+        font-size: 10px;
+    }
+}
+/*=============== home section ====================*/
+.home{
+    background: url(../images/Rectangle-3.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    border-bottom-left-radius: 100px;
+
+}
+
+.play-video{
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+.play-video i{
+    color: #0000007a;
+}
+
+.center{
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+.h1{
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+.read-more{
+    display:inline-block ;
+    background: #20A950;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+/* ==================about us section============== */
+.about-us{
+    text-align: center;
+    padding: 100px 0 130px;
+    background: url(../images/main-testimonial-bg.png) no-repeat;
+    background-position: bottom;
+}
+.h2{
+    color: #0E5BA3;
+    font-size: 38px;
+    font-weight: bold;
+    position: relative;
+  }
+  .img-icn{
+      position: absolute;
+      top: -25px;
+      width: 25px;
+  }
+  .about-us p{
+    color: #3E3E3E;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 33px;
+    text-align: center;
+  }
+
+  .h3{
+    color: #0E5BA3;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: relative;
+  }
+  .sec-text{
+      padding: 2rem 0;
+  }
+  .sec-img .carve-left{
+    border-bottom-right-radius: 100px;
+  }
+  .sec-img .carve-right{
+    border-bottom-left-radius: 100px;
+  }
+  @media (max-width:991px) {
+      .sec-text{
+          padding: 3rem 0;
+      }
+      .sec-img{
+          margin-bottom: 1.5rem;
+      }
+  }
+  /*============== sections sec=================  */
+ .sections{
+      background: #FBFBFB;
+  }
+  .sec-text p{
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  .iso{
+      color: #0E5BA3;
+      font-weight: bold;
+  }
+  .sec-text ul li{
+      line-height: 1.8;
+      font-size: 15px;
+  }
+  .sec-text ul li::marker {
+    color: #0E5BA3;
+  }
+/* ============== co-worker section==================== */
+  .co-worker{
+      background: linear-gradient(135deg, #FBFBFB 0%, #FFFFFF 100%);
+      padding: 50px 0 100px 0;
+      text-align: center;
+  }
+/* ===============footer======================== */
+  .footer{
+    color: #fff;
+    padding: 50px 0 20px;
+    background: url(../images/foot-bg.png) no-repeat left center #0e5ba3;
+  }
+  .footer li{
+      font-weight: 600;
+      margin-bottom: 7px;
+  }
+  .footer li a{
+      color: #fff;
+      text-decoration: none;
+  }
+  .input-email{
+      width: 100%;
+      border-radius: 6px;
+      background-color: #FCFCFD;
+      outline: none;
+      border: 1px solid #0e5ba3;
+      color: #9F9F9F;
+      padding: 10px 40px 10px  10px;
+  }
+  .submit{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+  .submit button{
+      background: #0e5ba3;
+      border: none;
+      border-radius: 7px;
+      color: #fff;
+      width: 33px;
+      height: 31px;
+      outline: none;
+  }
+  .submit button::before{
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    padding-right: 3px;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+  .after-form{
+      font-size: 12px;
+      margin: 7px 0;
+  }
+  /* ====================page News============== */
+  body.news{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fbfbfb;
+
+  }
+  .nnews-cotent{
+      flex: 1;
+      position: relative;
+      background: linear-gradient(94.07deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0.7) 100%);
+  }
+  .news header{
+      background: #fff;
+      opacity: 1;
+        box-shadow: 0 3px 7px 0 rgb(0 0 0 / 15%);
+
+  }
+  .news .up-nav a ,
+  .news .up-nav button{
+    color: #676767;
+  }
+  .cent-news h2{
+      position: absolute;
+        vertical-align: middle;
+        top: 60%;
+        left: 10%;
+        color: #fff;
+  }
+  .news-text{
+      width: 70%;
+      margin: 10px auto;
+  }
+  .share{
+      text-align: right;
+  }
+  .share a{
+    text-decoration: none;  
+    color: #1D1D1B;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+.news-head ,
+.news .card-title{
+    color: #0e5ba3;
+    font-weight: 600;
+    margin: 20px 0 ;
+}
+.new-info{
+    color: #3E3E3E;
+   font-size: 18px;
+}
+@media (max-width:991px) {
+    .news-text{
+        width: 80%;
+    }
+}
+
+.news .card{
+    border: none;
+    margin: 15px 0;
+}
+.date{
+    color: #676767;
+    font-size: 16px;
+}
+.card-desc{
+    color: #3E3E3E;
+    font-size: 18px;
+}
+.news .rd-more{
+  color: #20A950;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.pagination{
+    margin: 60px 0 30px;
+    padding: 0;
+}
+.page-link {
+    position: relative;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin:  0 10px;
+    background: none;
+    border:none;
+}
+.page-link.active{
+    background: #20A950;
+    border-radius: 50%;
+    color: #fff;
+}
